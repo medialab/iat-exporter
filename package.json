@@ -1,0 +1,25 @@
+{
+  "name": "iat-exporter",
+  "version": "2.0.0",
+  "description": "Get data from oTree's IAT and turn it into a readable CSV.",
+  "main": "exporter/index.js",
+  "scripts": {
+    "app": "cd ./webapp && DEBUG=webapp:* npm start && cd ../",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/medialab/iat-exporter.git"
+  },
+  "author": "Davy Peter Braun <davy.braun@sciencespo.fr>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/medialab/iat-exporter/issues"
+  },
+  "homepage": "https://github.com/medialab/iat-exporter#readme",
+  "dependencies": {
+    "express": "^4.14.0",
+    "json2csv": "^3.7.0",
+    "upload-file": "^1.2.0"
+  }
+}
