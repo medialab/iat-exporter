@@ -22,9 +22,8 @@ module.exports = function(req, res, next) {
           if (err) {
             res.status(500).send(err);
           } else {
-            res.header("Content-Disposition,attachment;filename=data.json");
-            res.type("text/json");
-            res.status(200).send(data)
+            console.log(data);
+            res.status(200);
           }
         });
       }
